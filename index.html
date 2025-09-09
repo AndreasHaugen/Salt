@@ -102,10 +102,10 @@
 
     .card {
       position: relative;
-      background: var(--surface);
+      background: transparent;
       border-radius: var(--radius-xl);
       padding: 20px 18px;
-      box-shadow: var(--shadow-1);
+      box-shadow: none;
       transition: transform .28s ease, box-shadow .28s ease, background .28s ease;
       border: 1px solid rgba(2,6,23,0.04);
     }
@@ -127,7 +127,7 @@
       width: 44px; height: 44px; flex: 0 0 44px;
       display: grid; place-items: center;
       background: linear-gradient(180deg, var(--primary-weak), #fff);
-      border-radius: 14px;
+      border-radius: 0;
       border: 1px solid rgba(59,130,246,.15);
     }
     .badge svg { width: 22px; height: 22px; }
@@ -165,7 +165,7 @@
       background: var(--surface);
       border-radius: 14px; padding: 0;
       box-shadow: var(--shadow-1);
-      border: 1px solid rgba(2,6,23,0.05);
+      border: none;
     }
     .logo-fixed img { display: block; width: clamp(36px, 6vw, 56px); height: auto; }
   </style>
@@ -291,7 +291,7 @@
     
 
     <footer>
-      © <span id="y"></span> Ditt navn · Laget med enkel HTML & CSS
+      © <span id="y"></span> Andreas Haugen // Salt
     </footer>
   </div>
 
