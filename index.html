@@ -102,12 +102,12 @@
 
     .card {
       position: relative;
-      background: transparent;
+      background: var(--surface);
       border-radius: var(--radius-xl);
       padding: 20px 18px;
-      box-shadow: none;
+      box-shadow: var(--shadow-1);
       transition: transform .28s ease, box-shadow .28s ease, background .28s ease;
-      border: 1px solid rgba(2,6,23,0.04);
+      border: 1px solid rgba(2,6,23,0.08);
     }
 
     .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
@@ -126,9 +126,9 @@
     .badge {
       width: 44px; height: 44px; flex: 0 0 44px;
       display: grid; place-items: center;
-      background: linear-gradient(180deg, var(--primary-weak), #fff);
+      background: transparent;
       border-radius: 0;
-      border: 1px solid rgba(59,130,246,.15);
+      border: none;
     }
     .badge svg { width: 22px; height: 22px; }
 
@@ -162,7 +162,7 @@
     .logo-fixed {
       position: fixed; top: 16px; left: 16px; z-index: 50;
       display: inline-flex; align-items: center; justify-content: center;
-      background: var(--surface);
+      background: transparent;
       border-radius: 14px; padding: 0;
       box-shadow: var(--shadow-1);
       border: none;
